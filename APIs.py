@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[40]:
+# In[42]:
 
 
 from fastapi import FastAPI
@@ -33,7 +33,7 @@ def home():
 
 
 @app.post("/predict")
-def predict(data: YouTubeData):
+def predict(data:YouTubeData):
 
     df = pd.DataFrame({
         'Title': [data.Title],
